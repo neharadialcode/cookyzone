@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Press+Start+2P&display=swap');
+
+body {
+    font-family: 'Poppins',
+        sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* ==================FONT================== */
+
+    --font-14: 14px;
+    --font-18: 18px;
+    --font-24: 24px;
+    --font-48: 48px;
+    --font-96: 96px;
+    /* ==================COLOR================== */
+    --color-pink: #FF537E;
+    --color-sky-blue: #58A8FF;
+}
+
+@media(max-width:576px) {
+    :root {
+        --font-14: 12px;
+        --font-18: 14px;
+        --font-24: 18px;
+        --font-48: 30px;
+        --font-96: 50px;
+    }
+}
+
+/*====================== FONT SIZE CLASS====================== */
+.font-16 {
+    font-size: var(--font-16) !important;
+}
+
+.font-18 {
+    font-size: var(--font-18) !important;
+}
+
+.font-20 {
+    font-size: var(--font-20) !important;
+}
+
+.font-22 {
+    font-size: var(--font-22) !important;
+}
+
+.font-25 {
+    font-size: var(--font-25) !important;
+}
+
+.font-30 {
+    font-size: var(--font-30) !important;
+}
+
+.font-40 {
+    font-size: var(--font-40) !important;
+}
+
+.font-48 {
+    font-size: var(--font-48) !important;
+}
+
+/* ====================== FONT WEIGHT====================== */
+.fw-400 {
+    font-weight: 400 !important;
+}
+
+.fw-500 {
+    font-weight: 500 !important;
+}
+
+.fw-600 {
+    font-weight: 600 !important;
+}
+
+.fw-700 {
+    font-weight: 700 !important;
+}
+
+/* =========================================COLOR =========================================*/
+
+.text-color-sky-blue {
+    color: var(--color-sky-blue);
+}
+
+/*====================================== REAUSEABLE-CLASSES====================================== */
+
+.main-heading {
+    font-size: var(--font-96);
+    font-weight: 400;
+    line-height: 106px;
+}
+
+.heading {
+    font-size: var(--font-48);
+    font-weight: 400;
+}
+
+.sub-heading {
+    font-size: var(--font-24);
+    font-weight: 400;
+}
+
+.para {
+    font-size: var(--font-18);
+    font-weight: 400;
+}
+
+.blue-btn {
+    padding: 12px 32px;
+    border-radius: 8px;
+    background-color: var(--color-sky-blue);
+    border: 1px solid transparent;
+    color: white;
+}
+
+.pink-btn {
+    padding: 12px 32px;
+    border-radius: 8px;
+    background-color: var(--color-pink);
+    border: 1px solid transparent;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.bg-img-nav {
+    background-image: url(../images/bg-img-nav.png);
+    background-repeat: no-repeat;
+    background-position: top;
+    height: 817px;
+    /* background-size: cover; */
+}
+
+.mw-564 {
+    max-width: 564px;
+}
+
+.h-80 {
+    height: 80%;
+}
+
+.mw-244 {
+    max-width: 244px;
+}
+
+.small-card {
+    box-shadow: 0px 8px 24px 0px #26323814;
+    padding: 34px;
+}
+
+@media (min-width:992px) {
+    .nav-link {
+        position: relative;
+        padding: 12px 0 !important;
+    }
+
+    .nav-link::after {
+        content: '';
+        position: absolute;
+        width: 0%;
+        height: 4px;
+        background-color: #58A8FF;
+        left: 0;
+        bottom: 0;
+        border-radius: 2px;
+    }
+
+    .nav-link:hover::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 4px;
+        background-color: #58A8FF;
+        left: 0;
+        bottom: 0;
+        border-radius: 2px;
+    }
+
+    .active::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 4px;
+        background-color: #58A8FF;
+        left: 0;
+        bottom: 0;
+        border-radius: 2px;
+    }
+}
