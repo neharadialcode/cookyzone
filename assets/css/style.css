@@ -32,35 +32,29 @@ body {
 }
 
 /*====================== FONT SIZE CLASS====================== */
-.font-16 {
-    font-size: var(--font-16) !important;
+.fs-14 {
+    font-size: var(--font-14) !important;
 }
 
-.font-18 {
+.fs-18 {
     font-size: var(--font-18) !important;
 }
 
-.font-20 {
+.fs-20 {
     font-size: var(--font-20) !important;
 }
 
-.font-22 {
-    font-size: var(--font-22) !important;
+.fs-24 {
+    font-size: var(--font-24) !important;
 }
 
-.font-25 {
-    font-size: var(--font-25) !important;
+
+
+.fs-96 {
+    font-size: var(--font-96) !important;
 }
 
-.font-30 {
-    font-size: var(--font-30) !important;
-}
-
-.font-40 {
-    font-size: var(--font-40) !important;
-}
-
-.font-48 {
+.fs-48 {
     font-size: var(--font-48) !important;
 }
 
@@ -148,7 +142,7 @@ body {
     background-repeat: no-repeat;
     background-position: top;
     height: 817px;
-    /* background-size: cover; */
+    background-size: cover;
 }
 
 .mw-564 {
@@ -164,8 +158,29 @@ body {
 }
 
 .small-card {
-    box-shadow: 0px 8px 24px 0px #26323814;
+
     padding: 34px;
+    width: 244px;
+    border: 1px solid #00000029;
+    border-radius: 16px;
+}
+
+.small-card:hover {
+    box-shadow: 0px 8px 24px 0px #26323814;
+    border: none;
+}
+
+.big-card {
+    border-radius: 16px;
+    background: #FFFFFF;
+
+    border: 1px solid #00000029
+}
+
+.big-card:hover {
+    box-shadow: 0px 8px 24px 0px #26323814;
+    border: none;
+    transition: all .2s ease-in-out;
 }
 
 @media (min-width:992px) {
