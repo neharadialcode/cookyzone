@@ -237,7 +237,7 @@ body {
     border-radius: 16px;
     max-width: 312px;
     margin: auto;
-    height: 370px;
+    /* height: 370px; */
 }
 
 .card-3:hover {
@@ -346,5 +346,15 @@ body {
         left: 0;
         bottom: 0;
         border-radius: 2px;
+    }
+}
+
+@media (max-width:576px) {
+    .hero-div {
+        padding: 10px 15px;
+        max-width: 200px;
+        margin: auto;
+        transform: translate(0, -70%);
+        color: #808080;
     }
 }
