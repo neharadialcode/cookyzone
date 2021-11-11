@@ -23,6 +23,26 @@ body {
 
 }
 
+@media(max-width:1200px) {
+    :root {
+        --font-14: 14px;
+        --font-18: 16px;
+        --font-24: 20px;
+        --font-48: 35px;
+        --font-96: 70px;
+    }
+}
+
+@media(max-width:992px) {
+    :root {
+        --font-14: 14px;
+        --font-18: 16px;
+        --font-24: 20px;
+        --font-48: 35px;
+        --font-96: 50px;
+    }
+}
+
 @media(max-width:576px) {
     :root {
         --font-14: 12px;
@@ -274,10 +294,11 @@ body {
     box-shadow: 0px 8px 24px 0px #26323814;
     border-radius: 40px;
     /* position: relative; */
-    padding: 18px 40px;
+    padding: 18px 20px;
     max-width: 968px;
     margin: auto;
-    transform: translate(0, 10%);
+    transform: translate(0, -132%);
+    color: #808080;
 }
 
 .hero-btn {
