@@ -19,6 +19,8 @@ body {
     /* ==================COLOR================== */
     --color-pink: #FF537E;
     --color-sky-blue: #58A8FF;
+    --color-light-blue: #F7FBFF;
+
 }
 
 @media(max-width:576px) {
@@ -86,7 +88,7 @@ body {
 .main-heading {
     font-size: var(--font-96);
     font-weight: 400;
-    line-height: 106px;
+    /* line-height: 106px; */
 }
 
 .heading {
@@ -120,22 +122,19 @@ body {
     color: white;
 }
 
+.blue-btn:hover {
+    transition: all .2s ease-in-out;
+    background-color: transparent;
+    border: 1px solid #58A8FF;
+    color: var(--color-sky-blue);
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.pink-btn:hover {
+    transition: all .2s ease-in-out;
+    background-color: transparent;
+    border: 1px solid #FF537E;
+    color: var(--color-pink);
+}
 
 .bg-img-nav {
     background-image: url(../images/bg-img-nav.png);
@@ -149,6 +148,10 @@ body {
     max-width: 564px;
 }
 
+.mw-200 {
+    max-width: 200px;
+}
+
 .h-80 {
     height: 80%;
 }
@@ -157,12 +160,32 @@ body {
     max-width: 244px;
 }
 
-.small-card {
+.mw-424 {
+    max-width: 424px;
+}
 
+.op-75 {
+    opacity: 75%;
+}
+
+.footer-link {
+    text-decoration: none;
+    color: white;
+    opacity: .7;
+}
+
+.footer-link:hover {
+    opacity: 100% !important;
+    color: white;
+}
+
+.small-card {
     padding: 34px;
     width: 244px;
     border: 1px solid #00000029;
     border-radius: 16px;
+    margin: auto;
+    margin-top: 20px;
 }
 
 .small-card:hover {
@@ -173,7 +196,8 @@ body {
 .big-card {
     border-radius: 16px;
     background: #FFFFFF;
-
+    max-width: 424px;
+    margin: auto;
     border: 1px solid #00000029
 }
 
@@ -181,6 +205,87 @@ body {
     box-shadow: 0px 8px 24px 0px #26323814;
     border: none;
     transition: all .2s ease-in-out;
+}
+
+.bg-light-blue {
+    background-color: var(--color-light-blue);
+}
+
+.card-3 {
+    background-color: white;
+    border: 1px solid #00000029;
+    border-radius: 16px;
+    max-width: 312px;
+    margin: auto;
+    height: 370px;
+}
+
+.card-3:hover {
+    box-shadow: 0px 8px 24px 0px #26323814;
+    border: none;
+}
+
+.card-4 {
+    background-color: white;
+    border-radius: 16px;
+    max-width: 312px;
+    border: 1px solid #00000029;
+    transition: all .2s ease-in-out;
+}
+
+.card-4:hover {
+    background-color: var(--color-sky-blue);
+    color: white;
+    transition: all .2s ease-in-out;
+}
+
+.card-4:hover svg path {
+    fill: white;
+    transition: all .2s ease-in-out;
+}
+
+.card-4:hover h1 {
+    background-color: #69B1ff;
+    color: white;
+    transition: all .2s ease-in-out;
+}
+
+.card-4:hover button {
+    background-color: white;
+    transition: all .2s ease-in-out;
+}
+
+.heading-special {
+    background-color: var(--color-light-blue);
+    transition: all .2s ease-in-out;
+}
+
+.register-btn {
+    background-color: transparent;
+    color: var(--color-sky-blue);
+    border: 1px solid #58A8FF;
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+}
+
+.hero-div {
+    background-color: white;
+    box-shadow: 0px 8px 24px 0px #26323814;
+    border-radius: 40px;
+    /* position: relative; */
+    padding: 18px 40px;
+    max-width: 968px;
+    margin: auto;
+    transform: translate(0, 10%);
+}
+
+.hero-btn {
+    background-color: var(--color-sky-blue);
+    padding: 12px 32px;
+    border-radius: 115px;
+    color: white;
+    border: 1px solid transparent;
 }
 
 @media (min-width:992px) {
